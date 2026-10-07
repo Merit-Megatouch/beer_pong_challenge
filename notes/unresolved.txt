@@ -8,5 +8,3 @@ TwDrvFifo_open | libtouchscreen.so
 TwDrvFifo_read | libtouchscreen.so
 TwDrvFifo_write | libtouchscreen.so
 SoundOGG::RampOGGVolume(SoundOGG*, int, int, bool) | beer_pong_challenge.so
-SoundOGG::PlayOGG(char*, unsigned short, int) | beer_pong_challenge.so
-SoundOGG::StopOGG(SoundOGG*) | beer_pong_challenge.so
