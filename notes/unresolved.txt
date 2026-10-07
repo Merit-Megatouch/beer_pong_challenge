@@ -7,8 +7,6 @@ TwDrvFifo_ioctl | libtouchscreen.so
 TwDrvFifo_open | libtouchscreen.so
 TwDrvFifo_read | libtouchscreen.so
 TwDrvFifo_write | libtouchscreen.so
-NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmeritbasegame.so
-USBIO::JoystickFound() | libmeritbasegame.so
 SoundOGG::RampOGGVolume(SoundOGG*, int, int, bool) | beer_pong_challenge.so
 SoundOGG::PlayOGG(char*, unsigned short, int) | beer_pong_challenge.so
 SoundOGG::StopOGG(SoundOGG*) | beer_pong_challenge.so
