@@ -5,9 +5,9 @@
 | GameId | G_BEER_PONG_CHALLENGE = 205 |
 | Code | /usr/local/lib/beer_pong_challenge.so |
 | Engine family | merit3d |
-| Assets | /usr/local/ion_only/games/beer_pong |
-| Window size | 1024x768 — from declared HIGH_RESOLUTION |
-| Largest PNG | none |
-| Engine libraries beyond the shared SDK | libmerit3d.so libmeritbasegame.so libode.so libopcode.so  |
+| Assets | /usr/local/gamedata/gamegraphics/beer_pong |
+| Window size | 800x600 — from largest PNG (declared HIGH_RESOLUTION → 1024x768) |
+| Largest PNG | 800x600 (2d/menu_bkg_21game.png) |
+| Engine libraries beyond the shared SDK | libGLU.so.1 libmerit3d.so libmerit_legacy.so libmeritbasegame.so libode.so libopcode.so  |
 | Libraries not found in the cabinet | 0 (missing-libs.txt) |
-| Unresolved symbols | (not analysed: merit3d game) (unresolved.txt) |
+| Unresolved symbols | 139 unresolved symbol(s) (unresolved.txt) |

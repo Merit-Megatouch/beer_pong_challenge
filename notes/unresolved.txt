@@ -1,0 +1,143 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+FileLoc | beer_pong_challenge.so
+FileLoc | libmeritbasegame.so
+FlipBitmapVert | libmerit3d.so
+LinkFanTimeSetting | libmeritbasegame.so
+LinkShowDeckSetting | libmeritbasegame.so
+NVRAMData | libmeritbasegame.so
+NetGlob | libmeritbasegame.so
+RankFunc | libmeritbasegame.so
+WhoWeArePlaying | libmeritbasegame.so
+FileExists(char const*) | libmerit3d.so
+ClearAPreWave(char*) | beer_pong_challenge.so
+Debug_Flag_Set(char const*, char const*) | beer_pong_challenge.so
+Heartbeat_Check(int, int) | libmeritbasegame.so
+DoRegularProcessing() | libmerit3d.so
+debug_check_address(void*) | libmeritbasegame.so
+Heartbeat_WaitForAll(unsigned long, bool) | libmeritbasegame.so
+GetMyId() | libmeritbasegame.so
+GetMaster() | libmeritbasegame.so
+LightShow() | beer_pong_challenge.so
+MeritInput::InputManager::GetInstance() | beer_pong_challenge.so
+MeritInput::InputManager::GetInstance() | libmeritbasegame.so
+MeritInput::InputManager::DeleteInstance() | libmeritbasegame.so
+MeritInput::InputManager::JoystickSetRange(int, int) | beer_pong_challenge.so
+MeritInput::InputManager::Update(bool) | beer_pong_challenge.so
+MeritInput::InputManager::GetMouse() | libmerit3d.so
+MeritSound::SoundManager::DelInstance() | libmeritbasegame.so
+MeritSound::SoundManager::GetInstance() | libmeritbasegame.so
+MeritSound::SoundManager::Update(unsigned int) | libmeritbasegame.so
+MeritSound::SoundManager::Terminate() | libmeritbasegame.so
+NetGlobals::GetHeadIdx(unsigned char) | libmeritbasegame.so
+NetGlobals::ProcNetClicks() | libmeritbasegame.so
+NetGlobals::GetTrueLinkCount() | libmeritbasegame.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmeritbasegame.so
+ScreenInfo::GetInstance() | libmerit3d.so
+TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | libmerit3d.so
+TextSystem::SetTextDescription(TextDesc const&) | libmerit3d.so
+Translator::LoadTranslations(xml_gameinfo::GameIds) | libmerit3d.so
+WorldClass::RefreshArea(int, int, int, int) | libmeritbasegame.so
+WorldClass::SetBack(char const*, int) | libmeritbasegame.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | libmeritbasegame.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | libmeritbasegame.so
+SystemClass::CheckKey() | libmeritbasegame.so
+system_info::SystemInfo::GetInstance() | libmeritbasegame.so
+system_info::SystemInfo::IsPlatformForce() | libmeritbasegame.so
+MegacGlobals::PopWorld() | beer_pong_challenge.so
+MegacGlobals::PopWorld() | libmeritbasegame.so
+MegacGlobals::PushWorld(char const*, char const*, bool) | beer_pong_challenge.so
+MegacGlobals::PushWorld(char const*, char const*, bool) | libmeritbasegame.so
+CoinJamManager::RegisterCallback(void (*)(bool)) | beer_pong_challenge.so
+CoinJamManager::UnregisterCallback(void (*)(bool)) | beer_pong_challenge.so
+CoinJamManager::Instance() | beer_pong_challenge.so
+MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | libmeritbasegame.so
+MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | libmeritbasegame.so
+MyMeritManager::Instance() | libmeritbasegame.so
+ContinueControl::allowed() | beer_pong_challenge.so
+ContinueControl::display() | beer_pong_challenge.so
+LightShowManager::Play(LightShowManager::Sequences, bool, bool) | beer_pong_challenge.so
+ExtendedCrashInfo::ExtendedCrashInfo() | libmeritbasegame.so
+ExtendedCrashInfo::~ExtendedCrashInfo() | libmeritbasegame.so
+ads::in_game_ads::get_ad_name(xml_gameinfo::GameIds) | beer_pong_challenge.so
+USBIO::JoystickFound() | libmeritbasegame.so
+Bitmap::DeCompress() | libmerit3d.so
+Bitmap::LoadRawPNG(char*) | libmerit3d.so
+Bitmap::DeCompress32() | libmerit3d.so
+Bitmap::LoadPNG(char*, int) | libmerit3d.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | libmerit3d.so
+Bitmap::Bitmap(int, int, unsigned char, unsigned char) | libmerit3d.so
+Bitmap::~Bitmap() | libmerit3d.so
+Colour::black | libmerit3d.so
+Colour::white | libmerit3d.so
+Locale::LanguageManager::IndexOf(Locale::Languages) | libmerit3d.so
+Logger::Log(char const*, char const*, unsigned long, unsigned long, Logger::LOG_LEVEL, Logger::LOG_READER, Logger::LOG_TYPE, char const*, char const*, bool, char const*, ...) | beer_pong_challenge.so
+Logger::Log(char const*, char const*, unsigned long, unsigned long, Logger::LOG_LEVEL, Logger::LOG_READER, Logger::LOG_TYPE, char const*, char const*, bool, char const*, ...) | libmerit3d.so
+Logger::Log(char const*, char const*, unsigned long, unsigned long, Logger::LOG_LEVEL, Logger::LOG_READER, Logger::LOG_TYPE, char const*, char const*, bool, char const*, ...) | libmeritbasegame.so
+Sprite::DoNextFrame() | libmeritbasegame.so
+Sprite::SpriteClick() | libmeritbasegame.so
+Sprite::Reset() | libmeritbasegame.so
+Sprite::DoDraw() | libmeritbasegame.so
+Sprite::Signal(Group::SpriteSignalType) | libmeritbasegame.so
+Sprite::Signal(SpriteSignal*) | libmeritbasegame.so
+Sprite::Message(Group::SpriteSignalType) | libmeritbasegame.so
+Sprite::Message(SpriteSignal*) | libmeritbasegame.so
+Sprite::DoCommand(int) | libmeritbasegame.so
+Merit3d::RenderToTexture::UpdateTexture(unsigned char*) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateDeltaTextureFull(unsigned short*, unsigned char*, unsigned short) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateDeltaTextureDirty(unsigned short*, unsigned short) | libmerit3d.so
+Merit3d::RenderToTexture::Create(unsigned int, unsigned int, unsigned int) | libmerit3d.so
+Merit3d::RenderToTexture::Destroy() | libmerit3d.so
+Merit3d::RenderToTexture::RenderToTexture() | libmerit3d.so
+Merit3d::RenderToTexture::~RenderToTexture() | libmerit3d.so
+Merit3d::VideoObjectData::FirstFrame() | libmerit3d.so
+Merit3d::VideoObjectData::isVideoLoaded() | libmerit3d.so
+Merit3d::VideoObjectData::Load(char const*, bool) | libmerit3d.so
+Merit3d::VideoObjectData::Play() | libmerit3d.so
+Merit3d::VideoObjectData::Stop() | libmerit3d.so
+Merit3d::VideoObjectData::Pause() | libmerit3d.so
+Merit3d::VideoObjectData::Update(float) | libmerit3d.so
+Merit3d::VideoObjectData::Restart(int) | libmerit3d.so
+Merit3d::VideoObjectData::Shutdown() | libmerit3d.so
+Merit3d::VideoObjectData::VideoObjectData() | libmerit3d.so
+Profiler::DelInstance() | beer_pong_challenge.so
+Profiler::DumpResults() | beer_pong_challenge.so
+Profiler::GetInstance() | beer_pong_challenge.so
+Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | beer_pong_challenge.so
+Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | beer_pong_challenge.so
+SoundOGG::RampOGGVolume(SoundOGG*, int, int, bool) | beer_pong_challenge.so
+SoundOGG::PlayOGG(char*, unsigned short, int) | beer_pong_challenge.so
+SoundOGG::StopOGG(SoundOGG*) | beer_pong_challenge.so
+TextDesc::SetFontName(char const*) | libmerit3d.so
+NetSprite::SendPacket(unsigned char) | libmeritbasegame.so
+NetSprite::NetSprite(Bitmap*, unsigned short, unsigned char, unsigned short) | libmeritbasegame.so
+NetSprite::~NetSprite() | libmeritbasegame.so
+TextUtils::ConvertToMarkup(char const*) | libmerit3d.so
+MeritInput::InputManager::JoystickGetX() const | beer_pong_challenge.so
+MeritInput::InputManager::JoystickGetY() const | beer_pong_challenge.so
+MeritInput::InputManager::KeyboardGetKey(int) const | beer_pong_challenge.so
+MeritInput::InputManager::KeyboardGetKey(int) const | libmeritbasegame.so
+MeritInput::InputManager::MouseGetButton(int) const | beer_pong_challenge.so
+MeritInput::InputManager::JoystickGetButton(int) const | beer_pong_challenge.so
+MeritInput::InputManager::MouseGetX() const | beer_pong_challenge.so
+MeritInput::InputManager::MouseGetX() const | libmerit3d.so
+MeritInput::InputManager::MouseGetY() const | beer_pong_challenge.so
+MeritInput::InputManager::MouseGetY() const | libmerit3d.so
+MyMeritManager::PlayerLoaded() const | libmeritbasegame.so
+MyMeritManager::Name() const | libmeritbasegame.so
+layout::ScreenControl::GetCurrentWidth() const | libmerit3d.so
+layout::ScreenControl::GetCurrentHeight() const | libmerit3d.so
+NVRAMMap::GamesOpt(xml_gameoptions::GameOptionIndex) const | libmeritbasegame.so
+typeinfo for ExtendedCrashInfo | libmeritbasegame.so
+typeinfo for NetSprite | libmeritbasegame.so
+__aglXGetProcAddressARB | libmerit3d.so
+allegro_gl_flip | beer_pong_challenge.so
+allegro_gl_flip | libmerit3d.so
+clear_bitmap | beer_pong_challenge.so
+key | beer_pong_challenge.so
+position_mouse | libmerit3d.so
+screen | beer_pong_challenge.so
+textSystem | libmerit3d.so
+voice_set_volume | beer_pong_challenge.so
